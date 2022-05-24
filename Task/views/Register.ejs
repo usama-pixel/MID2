@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <form class="col-lg-3" action="/upload" method="post">
+                <input type="file" name="avatar" id="" class="col-lg-3 mt-5 mb-5 mx-4" />
+                <!-- <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" name="avatar" class="rounded-circle col-lg-3 mt-5 mb-5" style="width: 150px;" alt="Avatar" /> -->
+                <button type="submit" class="btn btn-primary" >Upload</button>
+            </form>
+            <form class="col-lg-6" action="/setData" method="post">
+                <!-- name and email -->
+                <div class="row mt-5">
+                    <div class="col">
+                        <input type="text" class="form-control" name="name" placeholder="First name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" name="email" placeholder="email">
+                    </div>
+                </div>
+                <!-- /name and email -->
+                <!-- phone and country -->
+                <div class="row mt-4">
+                    <div class="col">
+                        <input type="text" class="form-control" name="number" placeholder="Phone number">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" name="country" placeholder="Country">
+                    </div>
+                </div>
+                <!-- /phone and country -->
+                <!-- state and city -->
+                <div class="row mt-4">
+                    <div class="col">
+                        <input type="text" class="form-control" name="state" placeholder="State">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" name="city" placeholder="City">
+                    </div>
+                </div>
+                <!-- /state and city -->
+                <!-- addr and zipcode -->
+                <div class="row mt-4">
+                    <div class="col">
+                        <input type="text" class="form-control" name="address" placeholder="Address">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" name="zip" placeholder="Zip Code">
+                    </div>
+                </div>
+                <!-- /addr and zipcode -->
+                <button class="btn btn-primary mt-3" type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
